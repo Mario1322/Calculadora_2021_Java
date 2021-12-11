@@ -6,9 +6,9 @@ package codigo;
  */
 public class VentanaCalculadora extends javax.swing.JFrame {
 
-    /**
-     * Creates new form VentanaCalculadora
-     */
+    double operando1 = 0;// guarda el primer numero que metamos
+    String operacion = "";// guarda la operacion pulsada
+
     public VentanaCalculadora() {
         initComponents();
     }
@@ -33,8 +33,14 @@ public class VentanaCalculadora extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jButton0 = new javax.swing.JButton();
+        jButtonigual = new javax.swing.JButton();
+        jButtonsuma = new javax.swing.JButton();
+        jButtonresta = new javax.swing.JButton();
+        jButton14 = new javax.swing.JButton();
+        jButton15 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         pantalla.setBackground(new java.awt.Color(0, 0, 0));
         pantalla.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
@@ -42,6 +48,7 @@ public class VentanaCalculadora extends javax.swing.JFrame {
         pantalla.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         pantalla.setText("0");
         pantalla.setOpaque(true);
+        getContentPane().add(pantalla, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 6, 314, 50));
 
         jButton8.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
         jButton8.setText("8");
@@ -50,6 +57,7 @@ public class VentanaCalculadora extends javax.swing.JFrame {
                 jButton8ActionPerformed(evt);
             }
         });
+        getContentPane().add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(88, 118, 64, 64));
 
         jButton7.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
         jButton7.setText("7");
@@ -58,6 +66,7 @@ public class VentanaCalculadora extends javax.swing.JFrame {
                 jButton7ActionPerformed(evt);
             }
         });
+        getContentPane().add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, 64, 64));
 
         jButton9.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
         jButton9.setText("9");
@@ -66,6 +75,7 @@ public class VentanaCalculadora extends javax.swing.JFrame {
                 jButton9ActionPerformed(evt);
             }
         });
+        getContentPane().add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 118, 64, 64));
 
         jButton5.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
         jButton5.setText("5");
@@ -74,6 +84,7 @@ public class VentanaCalculadora extends javax.swing.JFrame {
                 jButton5ActionPerformed(evt);
             }
         });
+        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(88, 188, 64, 64));
 
         jButton4.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
         jButton4.setText("4");
@@ -82,6 +93,7 @@ public class VentanaCalculadora extends javax.swing.JFrame {
                 jButton4ActionPerformed(evt);
             }
         });
+        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 190, 64, 64));
 
         jButton6.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
         jButton6.setText("6");
@@ -90,6 +102,7 @@ public class VentanaCalculadora extends javax.swing.JFrame {
                 jButton6ActionPerformed(evt);
             }
         });
+        getContentPane().add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 188, 64, 64));
 
         jButton2.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
         jButton2.setText("2");
@@ -98,6 +111,7 @@ public class VentanaCalculadora extends javax.swing.JFrame {
                 jButton2ActionPerformed(evt);
             }
         });
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 260, 64, 64));
 
         jButton1.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
         jButton1.setText("1");
@@ -106,6 +120,7 @@ public class VentanaCalculadora extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 260, 64, 64));
 
         jButton3.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
         jButton3.setText("3");
@@ -114,6 +129,7 @@ public class VentanaCalculadora extends javax.swing.JFrame {
                 jButton3ActionPerformed(evt);
             }
         });
+        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 260, 64, 64));
 
         jButton0.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
         jButton0.setText("0");
@@ -122,65 +138,42 @@ public class VentanaCalculadora extends javax.swing.JFrame {
                 jButton0ActionPerformed(evt);
             }
         });
+        getContentPane().add(jButton0, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 330, 64, 64));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(pantalla, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(82, 82, 82)
-                                .addComponent(jButton0, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addContainerGap())
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(pantalla, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addComponent(jButton0, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(65, Short.MAX_VALUE))
-        );
+        jButtonigual.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
+        jButtonigual.setText("=");
+        jButtonigual.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonigualActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButtonigual, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 330, 140, 64));
+
+        jButtonsuma.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
+        jButtonsuma.setText("➕");
+        jButtonsuma.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonsumaActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButtonsuma, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 118, 64, 64));
+
+        jButtonresta.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
+        jButtonresta.setText("➖");
+        jButtonresta.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonrestaActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButtonresta, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 188, 64, 64));
+
+        jButton14.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
+        jButton14.setText("➗");
+        getContentPane().add(jButton14, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 330, 64, 64));
+
+        jButton15.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
+        jButton15.setText("✖");
+        getContentPane().add(jButton15, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 260, 64, 64));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -276,6 +269,26 @@ public class VentanaCalculadora extends javax.swing.JFrame {
        }
     }//GEN-LAST:event_jButton0ActionPerformed
 
+    private void jButtonsumaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonsumaActionPerformed
+    operacion = "+";
+    // Doble.valueof convierte un string en su equicalente numerico
+    operando1 = Double.valueOf(pantalla.getText());
+    //reseteo de pantalla
+    pantalla.setText("0");
+    }//GEN-LAST:event_jButtonsumaActionPerformed
+
+    private void jButtonigualActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonigualActionPerformed
+        Double operando2 = Double.valueOf(pantalla.getText());
+        if(operacion.equals("+")){
+            operando1 = operando1 + operando2;
+        }
+        pantalla.setText(""+operando1);
+    }//GEN-LAST:event_jButtonigualActionPerformed
+
+    private void jButtonrestaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonrestaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonrestaActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -314,6 +327,8 @@ public class VentanaCalculadora extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton0;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton14;
+    private javax.swing.JButton jButton15;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
@@ -322,6 +337,9 @@ public class VentanaCalculadora extends javax.swing.JFrame {
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;
+    private javax.swing.JButton jButtonigual;
+    private javax.swing.JButton jButtonresta;
+    private javax.swing.JButton jButtonsuma;
     private javax.swing.JLabel pantalla;
     // End of variables declaration//GEN-END:variables
 }
