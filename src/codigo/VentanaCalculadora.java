@@ -36,8 +36,12 @@ public class VentanaCalculadora extends javax.swing.JFrame {
         jButtonigual = new javax.swing.JButton();
         jButtonsuma = new javax.swing.JButton();
         jButtonresta = new javax.swing.JButton();
-        jButton14 = new javax.swing.JButton();
-        jButton15 = new javax.swing.JButton();
+        jButtondivision = new javax.swing.JButton();
+        jButtonmultiplicacion = new javax.swing.JButton();
+        jButtonresetear = new javax.swing.JButton();
+        jButtonraiz = new javax.swing.JButton();
+        jButtonlogaritmo = new javax.swing.JButton();
+        jButtonporcentaje = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -48,7 +52,7 @@ public class VentanaCalculadora extends javax.swing.JFrame {
         pantalla.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         pantalla.setText("0");
         pantalla.setOpaque(true);
-        getContentPane().add(pantalla, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 6, 314, 50));
+        getContentPane().add(pantalla, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 410, 50));
 
         jButton8.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
         jButton8.setText("8");
@@ -167,13 +171,60 @@ public class VentanaCalculadora extends javax.swing.JFrame {
         });
         getContentPane().add(jButtonresta, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 188, 64, 64));
 
-        jButton14.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
-        jButton14.setText("➗");
-        getContentPane().add(jButton14, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 330, 64, 64));
+        jButtondivision.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
+        jButtondivision.setText("➗");
+        jButtondivision.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtondivisionActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButtondivision, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 330, 64, 64));
 
-        jButton15.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
-        jButton15.setText("✖");
-        getContentPane().add(jButton15, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 260, 64, 64));
+        jButtonmultiplicacion.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
+        jButtonmultiplicacion.setText("✖");
+        jButtonmultiplicacion.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonmultiplicacionActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButtonmultiplicacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 260, 64, 64));
+
+        jButtonresetear.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
+        jButtonresetear.setText("🔙");
+        jButtonresetear.setToolTipText("");
+        jButtonresetear.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonresetearActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButtonresetear, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 120, 64, 64));
+
+        jButtonraiz.setFont(new java.awt.Font("Lucida Grande", 0, 24)); // NOI18N
+        jButtonraiz.setText("√ ");
+        jButtonraiz.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonraizActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButtonraiz, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 190, 64, 64));
+
+        jButtonlogaritmo.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
+        jButtonlogaritmo.setText("log");
+        jButtonlogaritmo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonlogaritmoActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButtonlogaritmo, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 330, 64, 64));
+
+        jButtonporcentaje.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
+        jButtonporcentaje.setText("%");
+        jButtonporcentaje.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonporcentajeActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButtonporcentaje, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 260, 64, 64));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -283,11 +334,76 @@ public class VentanaCalculadora extends javax.swing.JFrame {
             operando1 = operando1 + operando2;
         }
         pantalla.setText(""+operando1);
+        
+        if(operacion.equals("-")){
+            operando1 = operando1 - operando2;
+        }
+        pantalla.setText(""+operando1);
+        
+        if(operacion.equals("x")){
+            operando1 = operando1 * operando2;
+        }
+        pantalla.setText(""+operando1);
+        
+        if(operacion.equals("/")){
+            operando1 = operando1 / operando2;
+        }
+        pantalla.setText(""+operando1);
+        
+        if(operacion.equals("%")){
+            operando1 = operando1  / 100;
+        }
+        pantalla.setText(""+operando1);
     }//GEN-LAST:event_jButtonigualActionPerformed
 
     private void jButtonrestaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonrestaActionPerformed
-        // TODO add your handling code here:
+        operacion = "-";
+    // Doble.valueof convierte un string en su equicalente numerico
+    operando1 = Double.valueOf(pantalla.getText());
+    //reseteo de pantalla
+    pantalla.setText("0");
     }//GEN-LAST:event_jButtonrestaActionPerformed
+
+    private void jButtonmultiplicacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonmultiplicacionActionPerformed
+        operacion = "x";
+    // Doble.valueof convierte un string en su equicalente numerico
+    operando1 = Double.valueOf(pantalla.getText());
+    //reseteo de pantalla
+    pantalla.setText("0");
+    }//GEN-LAST:event_jButtonmultiplicacionActionPerformed
+
+    private void jButtondivisionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtondivisionActionPerformed
+        operacion = "/";
+    // Doble.valueof convierte un string en su equicalente numerico
+    operando1 = Double.valueOf(pantalla.getText());
+    //reseteo de pantalla
+    pantalla.setText("0");
+    }//GEN-LAST:event_jButtondivisionActionPerformed
+
+    private void jButtonresetearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonresetearActionPerformed
+    //reseteo de pantalla
+    pantalla.setText("0");
+    }//GEN-LAST:event_jButtonresetearActionPerformed
+
+    private void jButtonraizActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonraizActionPerformed
+       
+    // Doble.valueof convierte un string en su equicalente numerico
+    operando1 = Double.valueOf(pantalla.getText());
+    operando1 = Math.sqrt(operando1);
+    pantalla.setText(""+operando1);
+    }//GEN-LAST:event_jButtonraizActionPerformed
+
+    private void jButtonlogaritmoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonlogaritmoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonlogaritmoActionPerformed
+
+    private void jButtonporcentajeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonporcentajeActionPerformed
+       operacion = "%";
+    // Doble.valueof convierte un string en su equicalente numerico
+    operando1 = Double.valueOf(pantalla.getText());
+    //reseteo de pantalla
+    pantalla.setText("0");
+    }//GEN-LAST:event_jButtonporcentajeActionPerformed
 
     /**
      * @param args the command line arguments
@@ -327,8 +443,6 @@ public class VentanaCalculadora extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton0;
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton14;
-    private javax.swing.JButton jButton15;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
@@ -337,7 +451,13 @@ public class VentanaCalculadora extends javax.swing.JFrame {
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;
+    private javax.swing.JButton jButtondivision;
     private javax.swing.JButton jButtonigual;
+    private javax.swing.JButton jButtonlogaritmo;
+    private javax.swing.JButton jButtonmultiplicacion;
+    private javax.swing.JButton jButtonporcentaje;
+    private javax.swing.JButton jButtonraiz;
+    private javax.swing.JButton jButtonresetear;
     private javax.swing.JButton jButtonresta;
     private javax.swing.JButton jButtonsuma;
     private javax.swing.JLabel pantalla;
