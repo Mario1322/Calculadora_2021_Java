@@ -40,10 +40,11 @@ public class VentanaCalculadora extends javax.swing.JFrame {
         jButtonmultiplicacion = new javax.swing.JButton();
         jButtonresetear = new javax.swing.JButton();
         jButtonraiz = new javax.swing.JButton();
-        jButtonlogaritmo = new javax.swing.JButton();
+        jButtonalcuadrado = new javax.swing.JButton();
         jButtonporcentaje = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(0, 0, 0));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         pantalla.setBackground(new java.awt.Color(0, 0, 0));
@@ -52,8 +53,9 @@ public class VentanaCalculadora extends javax.swing.JFrame {
         pantalla.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         pantalla.setText("0");
         pantalla.setOpaque(true);
-        getContentPane().add(pantalla, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 410, 50));
+        getContentPane().add(pantalla, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 270, 50));
 
+        jButton8.setBackground(new java.awt.Color(153, 153, 153));
         jButton8.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
         jButton8.setText("8");
         jButton8.addActionListener(new java.awt.event.ActionListener() {
@@ -61,8 +63,9 @@ public class VentanaCalculadora extends javax.swing.JFrame {
                 jButton8ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(88, 118, 64, 64));
+        getContentPane().add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 150, 64, 64));
 
+        jButton7.setBackground(new java.awt.Color(153, 153, 153));
         jButton7.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
         jButton7.setText("7");
         jButton7.addActionListener(new java.awt.event.ActionListener() {
@@ -70,8 +73,9 @@ public class VentanaCalculadora extends javax.swing.JFrame {
                 jButton7ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, 64, 64));
+        getContentPane().add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 150, 64, 64));
 
+        jButton9.setBackground(new java.awt.Color(153, 153, 153));
         jButton9.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
         jButton9.setText("9");
         jButton9.addActionListener(new java.awt.event.ActionListener() {
@@ -79,8 +83,9 @@ public class VentanaCalculadora extends javax.swing.JFrame {
                 jButton9ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 118, 64, 64));
+        getContentPane().add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 150, 64, 64));
 
+        jButton5.setBackground(new java.awt.Color(153, 153, 153));
         jButton5.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
         jButton5.setText("5");
         jButton5.addActionListener(new java.awt.event.ActionListener() {
@@ -88,8 +93,9 @@ public class VentanaCalculadora extends javax.swing.JFrame {
                 jButton5ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(88, 188, 64, 64));
+        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 220, 64, 64));
 
+        jButton4.setBackground(new java.awt.Color(153, 153, 153));
         jButton4.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
         jButton4.setText("4");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -97,8 +103,9 @@ public class VentanaCalculadora extends javax.swing.JFrame {
                 jButton4ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 190, 64, 64));
+        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 220, 64, 64));
 
+        jButton6.setBackground(new java.awt.Color(153, 153, 153));
         jButton6.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
         jButton6.setText("6");
         jButton6.addActionListener(new java.awt.event.ActionListener() {
@@ -106,8 +113,9 @@ public class VentanaCalculadora extends javax.swing.JFrame {
                 jButton6ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 188, 64, 64));
+        getContentPane().add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 220, 64, 64));
 
+        jButton2.setBackground(new java.awt.Color(153, 153, 153));
         jButton2.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
         jButton2.setText("2");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -115,8 +123,9 @@ public class VentanaCalculadora extends javax.swing.JFrame {
                 jButton2ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 260, 64, 64));
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 290, 64, 64));
 
+        jButton1.setBackground(new java.awt.Color(153, 153, 153));
         jButton1.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
         jButton1.setText("1");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -124,8 +133,9 @@ public class VentanaCalculadora extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 260, 64, 64));
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 290, 64, 64));
 
+        jButton3.setBackground(new java.awt.Color(153, 153, 153));
         jButton3.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
         jButton3.setText("3");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -133,8 +143,9 @@ public class VentanaCalculadora extends javax.swing.JFrame {
                 jButton3ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 260, 64, 64));
+        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 290, 64, 64));
 
+        jButton0.setBackground(new java.awt.Color(153, 153, 153));
         jButton0.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
         jButton0.setText("0");
         jButton0.addActionListener(new java.awt.event.ActionListener() {
@@ -142,8 +153,9 @@ public class VentanaCalculadora extends javax.swing.JFrame {
                 jButton0ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton0, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 330, 64, 64));
+        getContentPane().add(jButton0, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 360, 64, 64));
 
+        jButtonigual.setBackground(new java.awt.Color(255, 153, 0));
         jButtonigual.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
         jButtonigual.setText("=");
         jButtonigual.addActionListener(new java.awt.event.ActionListener() {
@@ -151,8 +163,9 @@ public class VentanaCalculadora extends javax.swing.JFrame {
                 jButtonigualActionPerformed(evt);
             }
         });
-        getContentPane().add(jButtonigual, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 330, 140, 64));
+        getContentPane().add(jButtonigual, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 360, 130, 64));
 
+        jButtonsuma.setBackground(new java.awt.Color(255, 153, 0));
         jButtonsuma.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
         jButtonsuma.setText("➕");
         jButtonsuma.addActionListener(new java.awt.event.ActionListener() {
@@ -160,8 +173,9 @@ public class VentanaCalculadora extends javax.swing.JFrame {
                 jButtonsumaActionPerformed(evt);
             }
         });
-        getContentPane().add(jButtonsuma, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 118, 64, 64));
+        getContentPane().add(jButtonsuma, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 150, 64, 64));
 
+        jButtonresta.setBackground(new java.awt.Color(255, 153, 0));
         jButtonresta.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
         jButtonresta.setText("➖");
         jButtonresta.addActionListener(new java.awt.event.ActionListener() {
@@ -169,8 +183,9 @@ public class VentanaCalculadora extends javax.swing.JFrame {
                 jButtonrestaActionPerformed(evt);
             }
         });
-        getContentPane().add(jButtonresta, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 188, 64, 64));
+        getContentPane().add(jButtonresta, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 220, 64, 64));
 
+        jButtondivision.setBackground(new java.awt.Color(255, 153, 0));
         jButtondivision.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
         jButtondivision.setText("➗");
         jButtondivision.addActionListener(new java.awt.event.ActionListener() {
@@ -178,8 +193,9 @@ public class VentanaCalculadora extends javax.swing.JFrame {
                 jButtondivisionActionPerformed(evt);
             }
         });
-        getContentPane().add(jButtondivision, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 330, 64, 64));
+        getContentPane().add(jButtondivision, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 360, 64, 64));
 
+        jButtonmultiplicacion.setBackground(new java.awt.Color(255, 153, 0));
         jButtonmultiplicacion.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
         jButtonmultiplicacion.setText("✖");
         jButtonmultiplicacion.addActionListener(new java.awt.event.ActionListener() {
@@ -187,8 +203,9 @@ public class VentanaCalculadora extends javax.swing.JFrame {
                 jButtonmultiplicacionActionPerformed(evt);
             }
         });
-        getContentPane().add(jButtonmultiplicacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 260, 64, 64));
+        getContentPane().add(jButtonmultiplicacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 290, 64, 64));
 
+        jButtonresetear.setBackground(new java.awt.Color(255, 153, 0));
         jButtonresetear.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
         jButtonresetear.setText("🔙");
         jButtonresetear.setToolTipText("");
@@ -197,8 +214,9 @@ public class VentanaCalculadora extends javax.swing.JFrame {
                 jButtonresetearActionPerformed(evt);
             }
         });
-        getContentPane().add(jButtonresetear, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 120, 64, 64));
+        getContentPane().add(jButtonresetear, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 80, 64, 64));
 
+        jButtonraiz.setBackground(new java.awt.Color(255, 153, 0));
         jButtonraiz.setFont(new java.awt.Font("Lucida Grande", 0, 24)); // NOI18N
         jButtonraiz.setText("√ ");
         jButtonraiz.addActionListener(new java.awt.event.ActionListener() {
@@ -206,17 +224,19 @@ public class VentanaCalculadora extends javax.swing.JFrame {
                 jButtonraizActionPerformed(evt);
             }
         });
-        getContentPane().add(jButtonraiz, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 190, 64, 64));
+        getContentPane().add(jButtonraiz, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 80, 64, 64));
 
-        jButtonlogaritmo.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
-        jButtonlogaritmo.setText("log");
-        jButtonlogaritmo.addActionListener(new java.awt.event.ActionListener() {
+        jButtonalcuadrado.setBackground(new java.awt.Color(255, 153, 0));
+        jButtonalcuadrado.setFont(new java.awt.Font("Lucida Grande", 0, 24)); // NOI18N
+        jButtonalcuadrado.setText("^2");
+        jButtonalcuadrado.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonlogaritmoActionPerformed(evt);
+                jButtonalcuadradoActionPerformed(evt);
             }
         });
-        getContentPane().add(jButtonlogaritmo, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 330, 64, 64));
+        getContentPane().add(jButtonalcuadrado, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 80, 64, 64));
 
+        jButtonporcentaje.setBackground(new java.awt.Color(255, 153, 0));
         jButtonporcentaje.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
         jButtonporcentaje.setText("%");
         jButtonporcentaje.addActionListener(new java.awt.event.ActionListener() {
@@ -224,7 +244,7 @@ public class VentanaCalculadora extends javax.swing.JFrame {
                 jButtonporcentajeActionPerformed(evt);
             }
         });
-        getContentPane().add(jButtonporcentaje, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 260, 64, 64));
+        getContentPane().add(jButtonporcentaje, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 80, 64, 64));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -350,10 +370,7 @@ public class VentanaCalculadora extends javax.swing.JFrame {
         }
         pantalla.setText(""+operando1);
         
-        if(operacion.equals("%")){
-            operando1 = operando1  / 100;
-        }
-        pantalla.setText(""+operando1);
+        
     }//GEN-LAST:event_jButtonigualActionPerformed
 
     private void jButtonrestaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonrestaActionPerformed
@@ -393,16 +410,20 @@ public class VentanaCalculadora extends javax.swing.JFrame {
     pantalla.setText(""+operando1);
     }//GEN-LAST:event_jButtonraizActionPerformed
 
-    private void jButtonlogaritmoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonlogaritmoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButtonlogaritmoActionPerformed
+    private void jButtonalcuadradoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonalcuadradoActionPerformed
+        operacion = "^2";
+    // Doble.valueof convierte un string en su equicalente numerico
+    operando1 = Double.valueOf(pantalla.getText());   
+    operando1 = operando1 * operando1;
+    pantalla.setText(""+operando1);
+    }//GEN-LAST:event_jButtonalcuadradoActionPerformed
 
     private void jButtonporcentajeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonporcentajeActionPerformed
        operacion = "%";
     // Doble.valueof convierte un string en su equicalente numerico
-    operando1 = Double.valueOf(pantalla.getText());
-    //reseteo de pantalla
-    pantalla.setText("0");
+    operando1 = Double.valueOf(pantalla.getText());   
+    operando1 = operando1  / 100;
+    pantalla.setText(""+operando1);
     }//GEN-LAST:event_jButtonporcentajeActionPerformed
 
     /**
@@ -451,9 +472,9 @@ public class VentanaCalculadora extends javax.swing.JFrame {
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;
+    private javax.swing.JButton jButtonalcuadrado;
     private javax.swing.JButton jButtondivision;
     private javax.swing.JButton jButtonigual;
-    private javax.swing.JButton jButtonlogaritmo;
     private javax.swing.JButton jButtonmultiplicacion;
     private javax.swing.JButton jButtonporcentaje;
     private javax.swing.JButton jButtonraiz;
