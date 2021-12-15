@@ -40,8 +40,8 @@ public class VentanaCalculadora extends javax.swing.JFrame {
         jButtonmultiplicacion = new javax.swing.JButton();
         jButtonresetear = new javax.swing.JButton();
         jButtonraiz = new javax.swing.JButton();
-        jButtonalcuadrado = new javax.swing.JButton();
         jButtonporcentaje = new javax.swing.JButton();
+        jButtonalcuadrado1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(0, 0, 0));
@@ -52,7 +52,7 @@ public class VentanaCalculadora extends javax.swing.JFrame {
         pantalla.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         pantalla.setText("0");
         pantalla.setOpaque(true);
-        getContentPane().add(pantalla, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 270, 50));
+        getContentPane().add(pantalla, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 280, 50));
 
         jButton8.setBackground(new java.awt.Color(153, 153, 153));
         jButton8.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
@@ -225,16 +225,6 @@ public class VentanaCalculadora extends javax.swing.JFrame {
         });
         getContentPane().add(jButtonraiz, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 70, 64, 64));
 
-        jButtonalcuadrado.setBackground(new java.awt.Color(255, 153, 0));
-        jButtonalcuadrado.setFont(new java.awt.Font("Lucida Grande", 0, 24)); // NOI18N
-        jButtonalcuadrado.setText("^2");
-        jButtonalcuadrado.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonalcuadradoActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButtonalcuadrado, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 70, 64, 64));
-
         jButtonporcentaje.setBackground(new java.awt.Color(255, 153, 0));
         jButtonporcentaje.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
         jButtonporcentaje.setText("%");
@@ -244,6 +234,16 @@ public class VentanaCalculadora extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButtonporcentaje, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 70, 64, 64));
+
+        jButtonalcuadrado1.setBackground(new java.awt.Color(255, 153, 0));
+        jButtonalcuadrado1.setFont(new java.awt.Font("Lucida Grande", 0, 24)); // NOI18N
+        jButtonalcuadrado1.setText("^2");
+        jButtonalcuadrado1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonalcuadrado1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButtonalcuadrado1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 70, 64, 64));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -409,14 +409,6 @@ public class VentanaCalculadora extends javax.swing.JFrame {
     pantalla.setText(""+operando1);
     }//GEN-LAST:event_jButtonraizActionPerformed
 
-    private void jButtonalcuadradoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonalcuadradoActionPerformed
-        operacion = "^2";
-    // Doble.valueof convierte un string en su equicalente numerico
-    operando1 = Double.valueOf(pantalla.getText());   
-    operando1 = operando1 * operando1;
-    pantalla.setText(""+operando1);
-    }//GEN-LAST:event_jButtonalcuadradoActionPerformed
-
     private void jButtonporcentajeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonporcentajeActionPerformed
        operacion = "%";
     // Doble.valueof convierte un string en su equicalente numerico
@@ -424,6 +416,10 @@ public class VentanaCalculadora extends javax.swing.JFrame {
     operando1 = operando1  / 100;
     pantalla.setText(""+operando1);
     }//GEN-LAST:event_jButtonporcentajeActionPerformed
+
+    private void jButtonalcuadrado1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonalcuadrado1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonalcuadrado1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -471,7 +467,7 @@ public class VentanaCalculadora extends javax.swing.JFrame {
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;
-    private javax.swing.JButton jButtonalcuadrado;
+    private javax.swing.JButton jButtonalcuadrado1;
     private javax.swing.JButton jButtondivision;
     private javax.swing.JButton jButtonigual;
     private javax.swing.JButton jButtonmultiplicacion;
