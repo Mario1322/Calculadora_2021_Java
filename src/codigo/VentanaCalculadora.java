@@ -47,9 +47,8 @@ public class VentanaCalculadora extends javax.swing.JFrame {
         setBackground(new java.awt.Color(0, 0, 0));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        pantalla.setBackground(new java.awt.Color(0, 0, 0));
         pantalla.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
-        pantalla.setForeground(new java.awt.Color(51, 255, 51));
+        pantalla.setForeground(new java.awt.Color(255, 0, 255));
         pantalla.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         pantalla.setText("0");
         pantalla.setOpaque(true);
@@ -63,7 +62,7 @@ public class VentanaCalculadora extends javax.swing.JFrame {
                 jButton8ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 150, 64, 64));
+        getContentPane().add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 140, 64, 64));
 
         jButton7.setBackground(new java.awt.Color(153, 153, 153));
         jButton7.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
@@ -73,7 +72,7 @@ public class VentanaCalculadora extends javax.swing.JFrame {
                 jButton7ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 150, 64, 64));
+        getContentPane().add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 140, 64, 64));
 
         jButton9.setBackground(new java.awt.Color(153, 153, 153));
         jButton9.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
@@ -83,7 +82,7 @@ public class VentanaCalculadora extends javax.swing.JFrame {
                 jButton9ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 150, 64, 64));
+        getContentPane().add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 140, 64, 64));
 
         jButton5.setBackground(new java.awt.Color(153, 153, 153));
         jButton5.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
@@ -93,7 +92,7 @@ public class VentanaCalculadora extends javax.swing.JFrame {
                 jButton5ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 220, 64, 64));
+        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 210, 64, 64));
 
         jButton4.setBackground(new java.awt.Color(153, 153, 153));
         jButton4.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
@@ -103,7 +102,7 @@ public class VentanaCalculadora extends javax.swing.JFrame {
                 jButton4ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 220, 64, 64));
+        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 210, 64, 64));
 
         jButton6.setBackground(new java.awt.Color(153, 153, 153));
         jButton6.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
@@ -113,7 +112,7 @@ public class VentanaCalculadora extends javax.swing.JFrame {
                 jButton6ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 220, 64, 64));
+        getContentPane().add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 210, 64, 64));
 
         jButton2.setBackground(new java.awt.Color(153, 153, 153));
         jButton2.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
@@ -123,7 +122,7 @@ public class VentanaCalculadora extends javax.swing.JFrame {
                 jButton2ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 290, 64, 64));
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 280, 64, 64));
 
         jButton1.setBackground(new java.awt.Color(153, 153, 153));
         jButton1.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
@@ -133,7 +132,7 @@ public class VentanaCalculadora extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 290, 64, 64));
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 280, 64, 64));
 
         jButton3.setBackground(new java.awt.Color(153, 153, 153));
         jButton3.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
@@ -143,7 +142,7 @@ public class VentanaCalculadora extends javax.swing.JFrame {
                 jButton3ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 290, 64, 64));
+        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 280, 64, 64));
 
         jButton0.setBackground(new java.awt.Color(153, 153, 153));
         jButton0.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
@@ -153,7 +152,7 @@ public class VentanaCalculadora extends javax.swing.JFrame {
                 jButton0ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton0, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 360, 64, 64));
+        getContentPane().add(jButton0, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 350, 64, 64));
 
         jButtonigual.setBackground(new java.awt.Color(255, 153, 0));
         jButtonigual.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
@@ -163,7 +162,7 @@ public class VentanaCalculadora extends javax.swing.JFrame {
                 jButtonigualActionPerformed(evt);
             }
         });
-        getContentPane().add(jButtonigual, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 360, 130, 64));
+        getContentPane().add(jButtonigual, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 350, 130, 64));
 
         jButtonsuma.setBackground(new java.awt.Color(255, 153, 0));
         jButtonsuma.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
@@ -173,7 +172,7 @@ public class VentanaCalculadora extends javax.swing.JFrame {
                 jButtonsumaActionPerformed(evt);
             }
         });
-        getContentPane().add(jButtonsuma, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 150, 64, 64));
+        getContentPane().add(jButtonsuma, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 140, 64, 64));
 
         jButtonresta.setBackground(new java.awt.Color(255, 153, 0));
         jButtonresta.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
@@ -183,7 +182,7 @@ public class VentanaCalculadora extends javax.swing.JFrame {
                 jButtonrestaActionPerformed(evt);
             }
         });
-        getContentPane().add(jButtonresta, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 220, 64, 64));
+        getContentPane().add(jButtonresta, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 210, 64, 64));
 
         jButtondivision.setBackground(new java.awt.Color(255, 153, 0));
         jButtondivision.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
@@ -193,7 +192,7 @@ public class VentanaCalculadora extends javax.swing.JFrame {
                 jButtondivisionActionPerformed(evt);
             }
         });
-        getContentPane().add(jButtondivision, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 360, 64, 64));
+        getContentPane().add(jButtondivision, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 350, 64, 64));
 
         jButtonmultiplicacion.setBackground(new java.awt.Color(255, 153, 0));
         jButtonmultiplicacion.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
@@ -203,7 +202,7 @@ public class VentanaCalculadora extends javax.swing.JFrame {
                 jButtonmultiplicacionActionPerformed(evt);
             }
         });
-        getContentPane().add(jButtonmultiplicacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 290, 64, 64));
+        getContentPane().add(jButtonmultiplicacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 280, 64, 64));
 
         jButtonresetear.setBackground(new java.awt.Color(255, 153, 0));
         jButtonresetear.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
@@ -214,7 +213,7 @@ public class VentanaCalculadora extends javax.swing.JFrame {
                 jButtonresetearActionPerformed(evt);
             }
         });
-        getContentPane().add(jButtonresetear, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 80, 64, 64));
+        getContentPane().add(jButtonresetear, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, 64, 64));
 
         jButtonraiz.setBackground(new java.awt.Color(255, 153, 0));
         jButtonraiz.setFont(new java.awt.Font("Lucida Grande", 0, 24)); // NOI18N
@@ -224,7 +223,7 @@ public class VentanaCalculadora extends javax.swing.JFrame {
                 jButtonraizActionPerformed(evt);
             }
         });
-        getContentPane().add(jButtonraiz, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 80, 64, 64));
+        getContentPane().add(jButtonraiz, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 70, 64, 64));
 
         jButtonalcuadrado.setBackground(new java.awt.Color(255, 153, 0));
         jButtonalcuadrado.setFont(new java.awt.Font("Lucida Grande", 0, 24)); // NOI18N
@@ -234,7 +233,7 @@ public class VentanaCalculadora extends javax.swing.JFrame {
                 jButtonalcuadradoActionPerformed(evt);
             }
         });
-        getContentPane().add(jButtonalcuadrado, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 80, 64, 64));
+        getContentPane().add(jButtonalcuadrado, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 70, 64, 64));
 
         jButtonporcentaje.setBackground(new java.awt.Color(255, 153, 0));
         jButtonporcentaje.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
@@ -244,7 +243,7 @@ public class VentanaCalculadora extends javax.swing.JFrame {
                 jButtonporcentajeActionPerformed(evt);
             }
         });
-        getContentPane().add(jButtonporcentaje, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 80, 64, 64));
+        getContentPane().add(jButtonporcentaje, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 70, 64, 64));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
