@@ -36,12 +36,12 @@ public class VentanaCalculadora extends javax.swing.JFrame {
         jButtonigual = new javax.swing.JButton();
         jButtonsuma = new javax.swing.JButton();
         jButtonresta = new javax.swing.JButton();
-        jButtondivision = new javax.swing.JButton();
         jButtonmultiplicacion = new javax.swing.JButton();
         jButtonresetear = new javax.swing.JButton();
         jButtonraiz = new javax.swing.JButton();
         jButtonporcentaje = new javax.swing.JButton();
         jButtonalcuadrado1 = new javax.swing.JButton();
+        jButtondivision1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(0, 0, 0));
@@ -184,16 +184,6 @@ public class VentanaCalculadora extends javax.swing.JFrame {
         });
         getContentPane().add(jButtonresta, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 210, 64, 64));
 
-        jButtondivision.setBackground(new java.awt.Color(255, 153, 0));
-        jButtondivision.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
-        jButtondivision.setText("➗");
-        jButtondivision.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtondivisionActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButtondivision, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 350, 64, 64));
-
         jButtonmultiplicacion.setBackground(new java.awt.Color(255, 153, 0));
         jButtonmultiplicacion.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
         jButtonmultiplicacion.setText("✖");
@@ -244,6 +234,16 @@ public class VentanaCalculadora extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButtonalcuadrado1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 70, 64, 64));
+
+        jButtondivision1.setBackground(new java.awt.Color(255, 153, 0));
+        jButtondivision1.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
+        jButtondivision1.setText("➗");
+        jButtondivision1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtondivision1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButtondivision1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 350, 64, 64));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -388,14 +388,6 @@ public class VentanaCalculadora extends javax.swing.JFrame {
     pantalla.setText("0");
     }//GEN-LAST:event_jButtonmultiplicacionActionPerformed
 
-    private void jButtondivisionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtondivisionActionPerformed
-        operacion = "/";
-    // Doble.valueof convierte un string en su equicalente numerico
-    operando1 = Double.valueOf(pantalla.getText());
-    //reseteo de pantalla
-    pantalla.setText("0");
-    }//GEN-LAST:event_jButtondivisionActionPerformed
-
     private void jButtonresetearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonresetearActionPerformed
     //reseteo de pantalla
     pantalla.setText("0");
@@ -420,6 +412,10 @@ public class VentanaCalculadora extends javax.swing.JFrame {
     private void jButtonalcuadrado1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonalcuadrado1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButtonalcuadrado1ActionPerformed
+
+    private void jButtondivision1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtondivision1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtondivision1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -468,7 +464,7 @@ public class VentanaCalculadora extends javax.swing.JFrame {
     private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;
     private javax.swing.JButton jButtonalcuadrado1;
-    private javax.swing.JButton jButtondivision;
+    private javax.swing.JButton jButtondivision1;
     private javax.swing.JButton jButtonigual;
     private javax.swing.JButton jButtonmultiplicacion;
     private javax.swing.JButton jButtonporcentaje;
